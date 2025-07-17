@@ -55,17 +55,18 @@ Contact: Grid gallery for projects, navigation menu included
 ## Data Flow
 
 ### Contact Form Flow
-1. User fills out contact form with validation
-2. Form data is validated using Zod schemas
-3. POST request sent to `/api/contact` endpoint
-4. Server validates and stores message in database
-5. Success/error response sent back to client
-6. Toast notification shown to user
+1. User views contact information with direct links
+2. Email links open default email client with pre-filled recipient
+3. Phone links initiate direct calling
+4. Social media links open profiles in new tabs
+5. Static information display - no server processing required
 
 ### Portfolio Display
-- Static data for experience, projects, and skills
+- Static data for experience, projects, and skills updated with real information
+- Skills section displays Languages/Frameworks and Tools from provided image
 - Single-page application with smooth scrolling navigation
 - Responsive design for mobile and desktop
+- Material Ocean theme with high contrast colors
 
 ## External Dependencies
 

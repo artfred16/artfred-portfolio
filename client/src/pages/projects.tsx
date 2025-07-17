@@ -9,16 +9,16 @@ export default function Projects() {
       description: "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard built with Laravel and Vue.js.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       technologies: ["Laravel", "Vue.js", "MySQL", "Stripe"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/artfred16",
       liveUrl: "#"
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Task Management System",
       description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "WebSocket", "Redis"],
-      githubUrl: "#",
+      technologies: ["Laravel", "Vue.js", "Livewire", "MySQL"],
+      githubUrl: "https://github.com/artfred16",
       liveUrl: "#"
     },
     {
@@ -27,25 +27,25 @@ export default function Projects() {
       description: "Comprehensive REST API with authentication, rate limiting, and comprehensive documentation. Built for scalability and performance.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
       technologies: ["Laravel", "Sanctum", "OpenAPI", "PostgreSQL"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/artfred16",
       liveUrl: "#"
     },
     {
       id: 4,
-      title: "Real-time Chat App",
-      description: "Real-time messaging application with file sharing, emoji support, and group chat functionality using WebSockets.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "Pusher", "Socket.io"],
-      githubUrl: "#",
+      title: "Content Management System",
+      description: "Custom CMS with role-based permissions, media management, and SEO optimization tools using Laravel Filament.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Laravel", "Filament", "MySQL", "TailwindCSS"],
+      githubUrl: "https://github.com/artfred16",
       liveUrl: "#"
     },
     {
       id: 5,
-      title: "Custom CMS",
-      description: "Flexible content management system with role-based permissions, media management, and SEO optimization tools.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Spatie", "Filament", "Elasticsearch"],
-      githubUrl: "#",
+      title: "Real-time Chat Application",
+      description: "Real-time messaging application with file sharing, emoji support, and group chat functionality using Laravel and Vue.js.",
+      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Laravel", "Vue.js", "Pusher", "MySQL"],
+      githubUrl: "https://github.com/artfred16",
       liveUrl: "#"
     },
     {
@@ -53,8 +53,8 @@ export default function Projects() {
       title: "Analytics Dashboard",
       description: "Advanced analytics dashboard with real-time data visualization, custom reports, and automated insights for business intelligence.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "Chart.js", "MongoDB"],
-      githubUrl: "#",
+      technologies: ["Laravel", "Vue.js", "Chart.js", "MySQL"],
+      githubUrl: "https://github.com/artfred16",
       liveUrl: "#"
     }
   ];

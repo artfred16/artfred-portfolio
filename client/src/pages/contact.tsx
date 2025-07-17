@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact-form";
+
 import { ContactInfo } from "@/lib/types";
 
 export default function Contact() {
@@ -120,8 +120,24 @@ export default function Contact() {
             </div>
           </div>
           
-          {/* Contact Form */}
-          <ContactForm />
+          {/* Additional Information */}
+          <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
+            <h3 className="text-xl font-semibold mb-4">About Me</h3>
+            <p className="text-slate-300 mb-4">
+              I'm a passionate Laravel developer with experience in building scalable web applications. 
+              I specialize in PHP, Laravel, Vue.js, and modern web technologies.
+            </p>
+            <p className="text-slate-300 mb-4">
+              I'm currently open to new opportunities and exciting projects. 
+              Feel free to reach out if you'd like to collaborate or discuss potential work.
+            </p>
+            <div className="flex flex-wrap gap-2 mt-4">
+              <span className="px-3 py-1 bg-laravel-red/20 text-laravel-red rounded-full text-sm">Laravel Expert</span>
+              <span className="px-3 py-1 bg-ocean-success/20 text-ocean-success rounded-full text-sm">Vue.js Developer</span>
+              <span className="px-3 py-1 bg-ocean-primary/20 text-ocean-primary rounded-full text-sm">Full Stack</span>
+              <span className="px-3 py-1 bg-ocean-secondary/20 text-ocean-secondary rounded-full text-sm">PHP Developer</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>

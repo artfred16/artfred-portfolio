@@ -9,7 +9,7 @@ export default function ExperiencePage() {
       company: "Tech Solutions Inc.",
       period: "2023 - Present",
       description: "Leading development of enterprise-level web applications using Laravel, Vue.js, and MySQL. Architected scalable solutions serving 100k+ users daily.",
-      technologies: ["Laravel", "Vue.js", "MySQL", "API Development"],
+      technologies: ["Laravel", "Vue.js", "MySQL", "Filament"],
       icon: "fas fa-briefcase",
       color: "bg-laravel-red"
     },
@@ -19,7 +19,7 @@ export default function ExperiencePage() {
       company: "Digital Agency Pro",
       period: "2021 - 2023",
       description: "Developed custom web applications and e-commerce platforms for clients. Collaborated with design teams to create responsive, user-friendly interfaces.",
-      technologies: ["PHP", "JavaScript", "Bootstrap", "WordPress"],
+      technologies: ["PHP", "JavaScript", "TailwindCSS", "Livewire"],
       icon: "fas fa-code",
       color: "bg-ocean-primary"
     },
@@ -29,7 +29,7 @@ export default function ExperiencePage() {
       company: "StartUp Hub",
       period: "2020 - 2021",
       description: "Started my professional journey building simple web applications and learning modern development practices. Focused on Laravel fundamentals and database design.",
-      technologies: ["Laravel", "MySQL", "jQuery", "Git"],
+      technologies: ["Laravel", "MySQL", "jQuery", "Bootstrap"],
       icon: "fas fa-graduation-cap",
       color: "bg-ocean-success"
     }
