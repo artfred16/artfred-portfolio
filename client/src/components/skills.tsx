@@ -59,7 +59,7 @@ export default function Skills() {
               {languages.map((lang) => (
                 <div key={lang.name} className="flex flex-col items-center hover:scale-105 transition-transform">
                   <i className={`${lang.icon} text-4xl ${lang.color} mb-3`}></i>
-                  <span className="text-sm text-slate-300 text-center">{lang.name}</span>
+                  <span className="text-sm text-slate-300 text-center w-full">{lang.name}</span>
                 </div>
               ))}
             </div>
@@ -75,7 +75,7 @@ export default function Skills() {
               {tools.map((tool) => (
                 <div key={tool.name} className="flex flex-col items-center hover:scale-105 transition-transform">
                   <i className={`${tool.icon} text-4xl ${tool.color} mb-3`}></i>
-                  <span className="text-sm text-slate-300 text-center">{tool.name}</span>
+                  <span className="text-sm text-slate-300 text-center w-full">{tool.name}</span>
                 </div>
               ))}
             </div>
