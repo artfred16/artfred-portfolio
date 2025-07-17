@@ -48,17 +48,17 @@ export default function Skills() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="space-y-16">
           {/* Languages and Frameworks */}
-          <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
-            <div className="flex items-center mb-6">
+          <div>
+            <div className="flex items-center mb-8">
               <i className="fas fa-code text-laravel-red text-xl mr-3"></i>
-              <h3 className="text-xl font-semibold">Languages And Frameworks</h3>
+              <h3 className="text-2xl font-semibold">Languages And Frameworks</h3>
             </div>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
               {languages.map((lang) => (
-                <div key={lang.name} className="flex flex-col items-center p-3 bg-ocean-dark rounded-lg border border-ocean-outline hover:border-ocean-primary transition-colors">
-                  <i className={`${lang.icon} text-2xl ${lang.color} mb-2`}></i>
+                <div key={lang.name} className="flex flex-col items-center hover:scale-105 transition-transform">
+                  <i className={`${lang.icon} text-4xl ${lang.color} mb-3`}></i>
                   <span className="text-sm text-slate-300 text-center">{lang.name}</span>
                 </div>
               ))}
@@ -66,15 +66,15 @@ export default function Skills() {
           </div>
 
           {/* Tools */}
-          <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
-            <div className="flex items-center mb-6">
+          <div>
+            <div className="flex items-center mb-8">
               <i className="fas fa-tools text-laravel-red text-xl mr-3"></i>
-              <h3 className="text-xl font-semibold">Tools I Utilize</h3>
+              <h3 className="text-2xl font-semibold">Tools I Utilize</h3>
             </div>
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
               {tools.map((tool) => (
-                <div key={tool.name} className="flex flex-col items-center p-3 bg-ocean-dark rounded-lg border border-ocean-outline hover:border-ocean-primary transition-colors">
-                  <i className={`${tool.icon} text-2xl ${tool.color} mb-2`}></i>
+                <div key={tool.name} className="flex flex-col items-center hover:scale-105 transition-transform">
+                  <i className={`${tool.icon} text-4xl ${tool.color} mb-3`}></i>
                   <span className="text-sm text-slate-300 text-center">{tool.name}</span>
                 </div>
               ))}
