@@ -3,37 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(240, 10%, 3.9%);
+  /* Material Ocean High Contrast Theme */
+  --background: hsl(220, 27%, 8%);
   --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(240, 10%, 3.9%);
+  --muted: hsl(220, 20%, 14%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --popover: hsl(220, 27%, 8%);
   --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
+  --card: hsl(220, 27%, 10%);
   --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(207, 90%, 54%);
-  --primary-foreground: hsl(211, 100%, 99%);
-  --secondary: hsl(240, 3.7%, 15.9%);
+  --border: hsl(220, 20%, 18%);
+  --input: hsl(220, 20%, 16%);
+  --primary: hsl(199, 89%, 60%);
+  --primary-foreground: hsl(220, 27%, 8%);
+  --secondary: hsl(220, 20%, 16%);
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(240, 3.7%, 15.9%);
+  --accent: hsl(220, 20%, 18%);
   --accent-foreground: hsl(0, 0%, 98%);
-  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive: hsl(0, 70%, 60%);
   --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(240, 4.9%, 83.9%);
+  --ring: hsl(199, 89%, 60%);
   --radius: 0.5rem;
   
-  /* Custom portfolio colors */
-  --editor-dark: hsl(240, 10%, 11.8%);
-  --editor-gray: hsl(240, 6%, 17.6%);
-  --editor-lighter: hsl(240, 4%, 24.3%);
-  --laravel-red: hsl(9, 100%, 56%);
-  --laravel-orange: hsl(30, 100%, 50%);
-  --code-blue: hsl(199, 89%, 48%);
-  --code-green: hsl(158, 64%, 52%);
-  --code-yellow: hsl(43, 96%, 56%);
-  --code-purple: hsl(252, 83%, 67%);
+  /* Material Ocean Custom Colors */
+  --ocean-dark: hsl(220, 27%, 8%);
+  --ocean-surface: hsl(220, 20%, 12%);
+  --ocean-surface-variant: hsl(220, 20%, 16%);
+  --ocean-outline: hsl(220, 15%, 25%);
+  --ocean-primary: hsl(199, 89%, 60%);
+  --ocean-secondary: hsl(270, 40%, 70%);
+  --ocean-tertiary: hsl(320, 40%, 70%);
+  --ocean-accent: hsl(180, 50%, 60%);
+  --ocean-warning: hsl(38, 90%, 60%);
+  --ocean-error: hsl(0, 70%, 60%);
+  --ocean-success: hsl(158, 60%, 55%);
+  --ocean-info: hsl(199, 89%, 60%);
+  --laravel-red: hsl(9, 100%, 65%);
 }
 
 @layer base {
@@ -43,8 +48,8 @@
 
   body {
     @apply font-sans antialiased;
-    background-color: var(--editor-dark);
-    color: hsl(210, 40%, 98%);
+    background-color: var(--ocean-dark);
+    color: hsl(0, 0%, 98%);
     font-family: 'Inter', sans-serif;
   }
 
@@ -59,48 +64,53 @@
 
 @layer components {
   .nav-link {
-    @apply transition-colors duration-200 hover:text-blue-400;
+    @apply transition-colors duration-200 hover:text-ocean-primary;
   }
 
   .editor-window {
-    background-color: var(--editor-gray);
-    border: 1px solid var(--editor-lighter);
+    background-color: var(--ocean-surface);
+    border: 1px solid var(--ocean-outline);
   }
 
   .skill-progress {
-    @apply bg-gray-800 rounded-full h-2;
+    background-color: var(--ocean-surface-variant);
+    @apply rounded-full h-2;
   }
 
   .timeline-line {
-    background-color: var(--editor-lighter);
+    background-color: var(--ocean-outline);
   }
 
   .project-card {
-    @apply bg-gray-800 border border-gray-700 rounded-lg overflow-hidden hover:border-red-500 transition-colors duration-300;
+    background-color: var(--ocean-surface);
+    border: 1px solid var(--ocean-outline);
+    @apply rounded-lg overflow-hidden hover:border-ocean-primary transition-colors duration-300;
   }
 
   .contact-input {
-    @apply w-full bg-gray-900 border border-gray-600 rounded-lg px-4 py-3 text-gray-100 focus:border-blue-400 focus:outline-none transition-colors;
+    background-color: var(--ocean-surface-variant);
+    border: 1px solid var(--ocean-outline);
+    @apply w-full rounded-lg px-4 py-3 text-white focus:border-ocean-primary focus:outline-none transition-colors;
   }
 
   .btn-primary {
-    background-color: var(--laravel-red);
-    @apply text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200;
+    background-color: var(--ocean-primary);
+    @apply text-ocean-dark px-6 py-3 rounded-lg font-medium transition-colors duration-200;
   }
 
   .btn-primary:hover {
-    background-color: hsl(9, 100%, 50%);
+    background-color: hsl(199, 89%, 70%);
   }
 
   .btn-secondary {
-    border: 1px solid var(--code-blue);
-    color: var(--code-blue);
+    border: 1px solid var(--ocean-accent);
+    color: var(--ocean-accent);
     @apply px-6 py-3 rounded-lg font-medium transition-colors duration-200;
   }
 
   .btn-secondary:hover {
-    background-color: var(--code-blue);
-    @apply text-white;
+    background-color: var(--ocean-accent);
+    @apply text-ocean-dark;
   }
 }
 
@@ -109,36 +119,56 @@
     color: var(--laravel-red);
   }
 
-  .text-code-blue {
-    color: var(--code-blue);
+  .text-ocean-primary {
+    color: var(--ocean-primary);
   }
 
-  .text-code-green {
-    color: var(--code-green);
+  .text-ocean-secondary {
+    color: var(--ocean-secondary);
   }
 
-  .text-code-yellow {
-    color: var(--code-yellow);
+  .text-ocean-tertiary {
+    color: var(--ocean-tertiary);
   }
 
-  .text-code-purple {
-    color: var(--code-purple);
+  .text-ocean-accent {
+    color: var(--ocean-accent);
   }
 
-  .bg-editor-dark {
-    background-color: var(--editor-dark);
+  .text-ocean-warning {
+    color: var(--ocean-warning);
   }
 
-  .bg-editor-gray {
-    background-color: var(--editor-gray);
+  .text-ocean-error {
+    color: var(--ocean-error);
   }
 
-  .bg-editor-lighter {
-    background-color: var(--editor-lighter);
+  .text-ocean-success {
+    color: var(--ocean-success);
   }
 
-  .border-editor-lighter {
-    border-color: var(--editor-lighter);
+  .text-ocean-info {
+    color: var(--ocean-info);
+  }
+
+  .bg-ocean-dark {
+    background-color: var(--ocean-dark);
+  }
+
+  .bg-ocean-surface {
+    background-color: var(--ocean-surface);
+  }
+
+  .bg-ocean-surface-variant {
+    background-color: var(--ocean-surface-variant);
+  }
+
+  .border-ocean-outline {
+    border-color: var(--ocean-outline);
+  }
+
+  .border-ocean-primary {
+    border-color: var(--ocean-primary);
   }
 
   .animate-float {

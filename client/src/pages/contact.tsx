@@ -10,7 +10,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-editor-gray/30">
+    <section id="contact" className="py-20 px-6 bg-ocean-surface/30">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-editor-gray rounded-lg p-6 border border-editor-lighter">
+            <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
               <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
@@ -36,7 +36,7 @@ export default function Contact() {
                     <p className="font-medium">Email</p>
                     <a
                       href={`mailto:${contactInfo.email}`}
-                      className="text-slate-400 hover:text-code-blue transition-colors"
+                      className="text-slate-400 hover:text-ocean-primary transition-colors"
                     >
                       {contactInfo.email}
                     </a>
@@ -44,14 +44,14 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-code-green/20 rounded-lg flex items-center justify-center">
-                    <i className="fas fa-phone text-code-green"></i>
+                  <div className="w-12 h-12 bg-ocean-success/20 rounded-lg flex items-center justify-center">
+                    <i className="fas fa-phone text-ocean-success"></i>
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
                     <a
                       href={`tel:${contactInfo.phone}`}
-                      className="text-slate-400 hover:text-code-blue transition-colors"
+                      className="text-slate-400 hover:text-ocean-primary transition-colors"
                     >
                       {contactInfo.phone}
                     </a>
@@ -59,8 +59,8 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-code-blue/20 rounded-lg flex items-center justify-center">
-                    <i className="fab fa-linkedin text-code-blue"></i>
+                  <div className="w-12 h-12 bg-ocean-primary/20 rounded-lg flex items-center justify-center">
+                    <i className="fab fa-linkedin text-ocean-primary"></i>
                   </div>
                   <div>
                     <p className="font-medium">LinkedIn</p>
@@ -68,7 +68,7 @@ export default function Contact() {
                       href={contactInfo.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-slate-400 hover:text-code-blue transition-colors"
+                      className="text-slate-400 hover:text-ocean-primary transition-colors"
                     >
                       Connect with me
                     </a>
@@ -76,8 +76,8 @@ export default function Contact() {
                 </div>
                 
                 <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-code-purple/20 rounded-lg flex items-center justify-center">
-                    <i className="fab fa-github text-code-purple"></i>
+                  <div className="w-12 h-12 bg-ocean-secondary/20 rounded-lg flex items-center justify-center">
+                    <i className="fab fa-github text-ocean-secondary"></i>
                   </div>
                   <div>
                     <p className="font-medium">GitHub</p>
@@ -85,7 +85,7 @@ export default function Contact() {
                       href={contactInfo.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-slate-400 hover:text-code-blue transition-colors"
+                      className="text-slate-400 hover:text-ocean-primary transition-colors"
                     >
                       View my repositories
                     </a>
@@ -94,7 +94,7 @@ export default function Contact() {
               </div>
             </div>
             
-            <div className="bg-editor-gray rounded-lg p-6 border border-editor-lighter">
+            <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
               <h3 className="text-xl font-semibold mb-4">Let's Work Together</h3>
               <p className="text-slate-300 mb-4">
                 I'm always interested in new opportunities and exciting projects.

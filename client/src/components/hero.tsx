@@ -6,11 +6,11 @@ export default function Hero() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="font-mono text-sm text-code-blue">
+              <div className="font-mono text-sm text-ocean-primary">
                 <span className="text-slate-400">const</span>{" "}
-                <span className="text-code-yellow">developer</span>{" "}
+                <span className="text-ocean-warning">developer</span>{" "}
                 <span className="text-slate-400">=</span>{" "}
-                <span className="text-code-green">{"{"}</span>
+                <span className="text-ocean-success">{"{"}</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold">
                 <span className="text-slate-100">Artfred</span>
@@ -19,16 +19,16 @@ export default function Hero() {
               </h1>
               <div className="font-mono text-sm text-slate-400 ml-6">
                 <div>
-                  name: <span className="text-code-green">"Artfred Dela Cruz"</span>,
+                  name: <span className="text-ocean-success">"Artfred Dela Cruz"</span>,
                 </div>
                 <div>
-                  role: <span className="text-code-green">"Laravel Developer"</span>,
+                  role: <span className="text-ocean-success">"Laravel Developer"</span>,
                 </div>
                 <div>
-                  passion: <span className="text-code-green">"Building Web Solutions"</span>
+                  passion: <span className="text-ocean-success">"Building Web Solutions"</span>
                 </div>
               </div>
-              <div className="font-mono text-sm text-code-green">{"}"}</div>
+              <div className="font-mono text-sm text-ocean-success">{"}"}</div>
             </div>
             
             <p className="text-lg text-slate-300 leading-relaxed">
@@ -65,19 +65,19 @@ export default function Hero() {
             <div className="flex space-x-6 pt-4">
               <a
                 href="mailto:artfred16delacruz@gmail.com"
-                className="text-slate-400 hover:text-code-blue transition-colors"
+                className="text-slate-400 hover:text-ocean-primary transition-colors"
               >
                 <i className="fas fa-envelope text-xl"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/artfred-dela-cruz-983437177"
-                className="text-slate-400 hover:text-code-blue transition-colors"
+                className="text-slate-400 hover:text-ocean-primary transition-colors"
               >
                 <i className="fab fa-linkedin text-xl"></i>
               </a>
               <a
                 href="https://github.com/artfred16"
-                className="text-slate-400 hover:text-code-blue transition-colors"
+                className="text-slate-400 hover:text-ocean-primary transition-colors"
               >
                 <i className="fab fa-github text-xl"></i>
               </a>
@@ -85,54 +85,54 @@ export default function Hero() {
           </div>
           
           {/* Code Animation */}
-          <div className="bg-editor-gray rounded-lg p-6 border border-editor-lighter">
+          <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-ocean-error rounded-full"></div>
+              <div className="w-3 h-3 bg-ocean-warning rounded-full"></div>
+              <div className="w-3 h-3 bg-ocean-success rounded-full"></div>
               <span className="text-slate-400 text-sm ml-4">artfred.php</span>
             </div>
             <div className="font-mono text-sm space-y-2">
               <div>
-                <span className="text-code-purple">&lt;?php</span>
+                <span className="text-ocean-secondary">&lt;?php</span>
               </div>
               <div className="ml-4">
-                <span className="text-code-purple">namespace</span>{" "}
-                <span className="text-code-yellow">App\Developer</span>
+                <span className="text-ocean-secondary">namespace</span>{" "}
+                <span className="text-ocean-warning">App\Developer</span>
                 <span className="text-slate-400">;</span>
               </div>
               <div className="ml-4">
-                <span className="text-code-purple">class</span>{" "}
-                <span className="text-code-blue">ArtfredDelaCruz</span>
+                <span className="text-ocean-secondary">class</span>{" "}
+                <span className="text-ocean-primary">ArtfredDelaCruz</span>
               </div>
               <div className="ml-4 text-slate-400">{"{"}</div>
               <div className="ml-8">
-                <span className="text-code-purple">public function</span>{" "}
-                <span className="text-code-yellow">getSkills</span>
+                <span className="text-ocean-secondary">public function</span>{" "}
+                <span className="text-ocean-warning">getSkills</span>
                 <span className="text-slate-400">(): </span>
-                <span className="text-code-blue">array</span>
+                <span className="text-ocean-primary">array</span>
               </div>
               <div className="ml-8 text-slate-400">{"{"}</div>
               <div className="ml-12">
-                <span className="text-code-purple">return</span>{" "}
+                <span className="text-ocean-secondary">return</span>{" "}
                 <span className="text-slate-400">[</span>
               </div>
               <div className="ml-16">
-                <span className="text-code-green">'PHP'</span>
+                <span className="text-ocean-success">'PHP'</span>
                 <span className="text-slate-400">,</span>{" "}
-                <span className="text-code-green">'Laravel'</span>
+                <span className="text-ocean-success">'Laravel'</span>
                 <span className="text-slate-400">,</span>
               </div>
               <div className="ml-16">
-                <span className="text-code-green">'Vue.js'</span>
+                <span className="text-ocean-success">'Vue.js'</span>
                 <span className="text-slate-400">,</span>{" "}
-                <span className="text-code-green">'MySQL'</span>
+                <span className="text-ocean-success">'MySQL'</span>
               </div>
               <div className="ml-12 text-slate-400">];</div>
               <div className="ml-8 text-slate-400">{"}"}</div>
               <div className="ml-4 text-slate-400">{"}"}</div>
               <div>
-                <span className="text-code-purple">?&gt;</span>
+                <span className="text-ocean-secondary">?&gt;</span>
               </div>
             </div>
           </div>

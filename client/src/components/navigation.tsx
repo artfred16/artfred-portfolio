@@ -49,7 +49,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-editor-dark/95 backdrop-blur-md border-b border-editor-lighter z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-ocean-dark/95 backdrop-blur-md border-b border-ocean-outline z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -65,8 +65,8 @@ export default function Navigation() {
                 onClick={() => scrollToSection(link.id)}
                 className={`nav-link transition-colors ${
                   activeSection === link.id
-                    ? "text-code-blue"
-                    : "text-slate-300 hover:text-code-blue"
+                    ? "text-ocean-primary"
+                    : "text-slate-300 hover:text-ocean-primary"
                 }`}
               >
                 {link.label}
@@ -77,7 +77,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-slate-300 hover:text-code-blue"
+            className="md:hidden text-slate-300 hover:text-ocean-primary"
           >
             <i className="fas fa-bars text-xl"></i>
           </button>
@@ -85,7 +85,7 @@ export default function Navigation() {
         
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-editor-lighter">
+          <div className="md:hidden mt-4 pb-4 border-t border-ocean-outline">
             <div className="flex flex-col space-y-4 pt-4">
               {navLinks.map((link) => (
                 <button
@@ -93,8 +93,8 @@ export default function Navigation() {
                   onClick={() => scrollToSection(link.id)}
                   className={`text-left transition-colors ${
                     activeSection === link.id
-                      ? "text-code-blue"
-                      : "text-slate-300 hover:text-code-blue"
+                      ? "text-ocean-primary"
+                      : "text-slate-300 hover:text-ocean-primary"
                   }`}
                 >
                   {link.label}

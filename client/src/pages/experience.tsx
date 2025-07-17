@@ -21,7 +21,7 @@ export default function ExperiencePage() {
       description: "Developed custom web applications and e-commerce platforms for clients. Collaborated with design teams to create responsive, user-friendly interfaces.",
       technologies: ["PHP", "JavaScript", "Bootstrap", "WordPress"],
       icon: "fas fa-code",
-      color: "bg-code-blue"
+      color: "bg-ocean-primary"
     },
     {
       id: 3,
@@ -31,12 +31,12 @@ export default function ExperiencePage() {
       description: "Started my professional journey building simple web applications and learning modern development practices. Focused on Laravel fundamentals and database design.",
       technologies: ["Laravel", "MySQL", "jQuery", "Git"],
       icon: "fas fa-graduation-cap",
-      color: "bg-code-green"
+      color: "bg-ocean-success"
     }
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-editor-gray/30">
+    <section id="experience" className="py-20 px-6 bg-ocean-surface/30">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

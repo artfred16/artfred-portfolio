@@ -29,13 +29,13 @@ export default function Skills() {
   const getProgressColor = (category: Skill['category']) => {
     switch (category) {
       case 'language':
-        return 'bg-code-purple';
+        return 'bg-ocean-secondary';
       case 'framework':
         return 'bg-laravel-red';
       case 'tool':
-        return 'bg-code-blue';
+        return 'bg-ocean-primary';
       default:
-        return 'bg-code-blue';
+        return 'bg-ocean-primary';
     }
   };
 
@@ -80,7 +80,7 @@ export default function Skills() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {(['language', 'framework', 'tool'] as const).map((category) => (
-            <div key={category} className="bg-editor-gray rounded-lg p-6 border border-editor-lighter">
+            <div key={category} className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
               <div className="flex items-center mb-4">
                 <i className={`${getCategoryIcon(category)} text-laravel-red text-xl mr-3`}></i>
                 <h3 className="text-xl font-semibold">{getCategoryTitle(category)}</h3>
@@ -90,18 +90,18 @@ export default function Skills() {
                   <div key={skill.name} className="flex items-center justify-between">
                     <span className="flex items-center">
                       <i className={`${skill.icon} mr-2 text-${
-                        skill.name === 'PHP' ? 'code-purple' :
-                        skill.name === 'JavaScript' ? 'code-yellow' :
-                        skill.name === 'HTML/CSS' ? 'orange-500' :
+                        skill.name === 'PHP' ? 'ocean-secondary' :
+                        skill.name === 'JavaScript' ? 'ocean-warning' :
+                        skill.name === 'HTML/CSS' ? 'ocean-tertiary' :
                         skill.name === 'Laravel' ? 'laravel-red' :
-                        skill.name === 'Vue.js' ? 'code-green' :
-                        skill.name === 'MySQL' ? 'code-blue' :
-                        skill.name === 'Git' ? 'orange-500' :
-                        'code-blue'
+                        skill.name === 'Vue.js' ? 'ocean-success' :
+                        skill.name === 'MySQL' ? 'ocean-primary' :
+                        skill.name === 'Git' ? 'ocean-tertiary' :
+                        'ocean-primary'
                       }`}></i>
                       {skill.name}
                     </span>
-                    <div className="w-16 h-2 bg-editor-dark rounded-full">
+                    <div className="w-16 h-2 bg-ocean-dark rounded-full">
                       <div
                         className={`h-full rounded-full ${getProgressColor(category)}`}
                         style={{ width: getProgressWidth(skill.level) }}
