@@ -27,11 +27,19 @@ export default function TimelineItem({ experience }: TimelineItemProps) {
                 tech === 'MySQL' ? 'bg-ocean-primary/20 text-ocean-primary' :
                 tech === 'PHP' ? 'bg-ocean-secondary/20 text-ocean-secondary' :
                 tech === 'JavaScript' ? 'bg-ocean-warning/20 text-ocean-warning' :
+                tech === 'Analytics' ? 'bg-ocean-tertiary/20 text-ocean-tertiary' :
+                tech === 'Ionic' ? 'bg-cyan-500/20 text-cyan-500' :
+                tech === 'E-commerce' ? 'bg-green-500/20 text-green-500' :
+                tech === 'GraphQL' ? 'bg-pink-500/20 text-pink-500' :
+                tech === 'Healthcare' ? 'bg-red-500/20 text-red-500' :
+                tech === 'RESTful APIs' ? 'bg-blue-500/20 text-blue-500' :
+                tech === 'Payment Gateways' ? 'bg-purple-500/20 text-purple-500' :
+                tech === 'C/C++' ? 'bg-blue-600/20 text-blue-600' :
+                tech === 'Java' ? 'bg-orange-500/20 text-orange-500' :
+                tech === 'Teaching' ? 'bg-emerald-500/20 text-emerald-500' :
+                tech === 'Groovy' ? 'bg-indigo-500/20 text-indigo-500' :
                 tech === 'API Development' ? 'bg-ocean-secondary/20 text-ocean-secondary' :
-                tech === 'Bootstrap' ? 'bg-ocean-success/20 text-ocean-success' :
-                tech === 'WordPress' ? 'bg-ocean-secondary/20 text-ocean-secondary' :
-                tech === 'jQuery' ? 'bg-ocean-warning/20 text-ocean-warning' :
-                tech === 'Git' ? 'bg-ocean-success/20 text-ocean-success' :
+                tech === 'Libraries' ? 'bg-teal-500/20 text-teal-500' :
                 'bg-ocean-primary/20 text-ocean-primary'
               }`}
             >

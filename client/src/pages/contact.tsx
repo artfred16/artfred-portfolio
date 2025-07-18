@@ -97,9 +97,7 @@ export default function Contact() {
             <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
               <h3 className="text-xl font-semibold mb-4">Let's Work Together</h3>
               <p className="text-slate-300 mb-4">
-                I'm always interested in new opportunities and exciting projects.
-                Whether you need a Laravel developer for your team or want to discuss
-                a project idea, I'd love to hear from you.
+                I'm always open to new opportunities and meaningful projects. Whether you're looking for a Laravel developer to join your team or want to explore a project idea, feel free to reach out — I'd love to connect.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -124,12 +122,10 @@ export default function Contact() {
           <div className="bg-ocean-surface rounded-lg p-6 border border-ocean-outline">
             <h3 className="text-xl font-semibold mb-4">About Me</h3>
             <p className="text-slate-300 mb-4">
-              I'm a passionate Laravel developer with experience in building scalable web applications. 
-              I specialize in PHP, Laravel, Vue.js, and modern web technologies.
+              I'm a passionate Laravel developer with a strong background in building scalable and efficient web applications. I specialize in PHP, Laravel, Vue.js, and modern web technologies.
             </p>
             <p className="text-slate-300 mb-4">
-              I'm currently open to new opportunities and exciting projects. 
-              Feel free to reach out if you'd like to collaborate or discuss potential work.
+              Currently open to new opportunities and exciting collaborations—feel free to reach out if you’d like to connect or discuss a potential project.
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
               <span className="px-3 py-1 bg-laravel-red/20 text-laravel-red rounded-full text-sm">Laravel Expert</span>

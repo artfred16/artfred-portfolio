@@ -32,9 +32,7 @@ export default function Hero() {
             </div>
             
             <p className="text-lg text-slate-300 leading-relaxed">
-              Passionate Laravel developer from the Philippines specializing in building robust web applications
-              with modern PHP frameworks and cutting-edge technologies. I create scalable,
-              maintainable solutions using Laravel, Vue.js, and the latest development tools.
+              Experienced Laravel and Vue.js developer based in the Philippines, focused on building scalable web applications that solve real business problems. Passionate about modern web technologies and eager to collaborate with innovative teams.
             </p>
             
             <div className="flex flex-wrap gap-4">

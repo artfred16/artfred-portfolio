@@ -5,33 +5,73 @@ export default function ExperiencePage() {
   const experiences: Experience[] = [
     {
       id: 1,
-      title: "Senior Laravel Developer",
-      company: "Tech Solutions Inc.",
-      period: "2023 - Present",
-      description: "Leading development of enterprise-level web applications using Laravel, Vue.js, and MySQL. Architected scalable solutions serving 100k+ users daily.",
-      technologies: ["Laravel", "Vue.js", "MySQL", "Filament"],
+      title: "Full Stack Developer",
+      company: "SimplyEarth",
+      period: "May 2023 - Present",
+      description: "Providing ongoing maintenance and support for e-commerce and inventory management systems. Leveraging analytical tools to monitor sales performance and implement optimization strategies.",
+      technologies: ["Laravel", "Vue.js", "MySQL", "Analytics"],
       icon: "fas fa-briefcase",
       color: "bg-laravel-red"
     },
     {
       id: 2,
-      title: "Full Stack Developer",
-      company: "Digital Agency Pro",
-      period: "2021 - 2023",
-      description: "Developed custom web applications and e-commerce platforms for clients. Collaborated with design teams to create responsive, user-friendly interfaces.",
-      technologies: ["PHP", "JavaScript", "TailwindCSS", "Livewire"],
+      title: "Full Stack Developer Contractor",
+      company: "Solgen Power",
+      period: "October 2022 - April 2023",
+      description: "Created and optimized mobile applications using Vue.js and Ionic framework. Designed optimized queries in Laravel and maintained comprehensive test cases.",
+      technologies: ["Laravel", "Vue.js", "Ionic", "PHP"],
       icon: "fas fa-code",
       color: "bg-ocean-primary"
     },
     {
       id: 3,
-      title: "Junior Web Developer",
-      company: "StartUp Hub",
-      period: "2020 - 2021",
-      description: "Started my professional journey building simple web applications and learning modern development practices. Focused on Laravel fundamentals and database design.",
-      technologies: ["Laravel", "MySQL", "jQuery", "Bootstrap"],
-      icon: "fas fa-graduation-cap",
+      title: "Consultant",
+      company: "SimplyEarth",
+      period: "September 2021 - 2022",
+      description: "Provided maintenance and support for e-commerce platform. Implemented new features for market expansion and integrated analytical tools for data-driven decisions.",
+      technologies: ["Laravel", "Vue.js", "Analytics", "E-commerce"],
+      icon: "fas fa-chart-line",
       color: "bg-ocean-success"
+    },
+    {
+      id: 4,
+      title: "Front End Developer",
+      company: "TreatAnyone Inc",
+      period: "February 2020 - October 2022",
+      description: "Designed tailored software applications for clinical specialists. Created intuitive front-end workflows and integrated APIs using GraphQL for healthcare settings.",
+      technologies: ["Vue.js", "GraphQL", "JavaScript", "Healthcare"],
+      icon: "fas fa-heartbeat",
+      color: "bg-ocean-secondary"
+    },
+    {
+      id: 5,
+      title: "Full Stack Developer",
+      company: "Aunicaj Int. Trading Corp",
+      period: "February 2017 - February 2020",
+      description: "Designed custom software applications and deployed robust online services using RESTful APIs. Engineered third-party integrations for payments, e-loading, and ticketing systems.",
+      technologies: ["PHP", "RESTful APIs", "Payment Gateways", "MySQL"],
+      icon: "fas fa-globe",
+      color: "bg-ocean-tertiary"
+    },
+    {
+      id: 6,
+      title: "Part-time IT Instructor",
+      company: "ISI, CLSU",
+      period: "January 2016 - December 2016",
+      description: "Introduced programming concepts and guided students through C/C++, Java OOP principles, and PHP web development. Taught Management Information Systems concepts.",
+      technologies: ["C/C++", "Java", "PHP", "Teaching"],
+      icon: "fas fa-chalkboard-teacher",
+      color: "bg-ocean-warning"
+    },
+    {
+      id: 7,
+      title: "Associate Software Engineer",
+      company: "TORO.IO",
+      period: "May 2015 - October 2015",
+      description: "Utilized Java programming and Groovy framework to develop production-grade API libraries. Created online implementations and maintained production libraries.",
+      technologies: ["Java", "Groovy", "API Development", "Libraries"],
+      icon: "fas fa-graduation-cap",
+      color: "bg-ocean-error"
     }
   ];
 

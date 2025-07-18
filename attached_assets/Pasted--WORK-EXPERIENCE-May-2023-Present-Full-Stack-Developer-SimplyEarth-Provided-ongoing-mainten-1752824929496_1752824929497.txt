@@ -1,0 +1,52 @@
+
+WORK EXPERIENCE
+May 2023 - Present	Full Stack Developer / SimplyEarth
+•	Provided ongoing maintenance and support for both e-commerce and inventory management systems, ensuring reliable performance and seamless operation.
+•	Leveraged analytical and conversion tracking tools to monitor sales performance, identify trends, and implement strategies to boost sales and optimize marketing efforts.
+•	Regularly updated the applications with new features and enhancements based on user feedback and market trends, improving functionality and user engagement.
+•	Facilitated integration of the applications with various external platforms and services, enhancing connectivity and interoperability within the business ecosystem.
+
+October 2022 – April 2023
+	Full Stack Developer Contractor / Solgen Power
+•	Adhered to best practices and coding standards in PHP to ensure clean, maintainable, and high-quality code across projects.
+•	Created and optimized mobile applications leveraging Vue.js and the Ionic framework, delivering cross-platform solutions with a focus on performance and user experience.
+•	Designed and executed optimized queries in Laravel, improving data retrieval performance and overall application efficiency.
+•	Developed and maintained comprehensive test cases in Laravel, ensuring robust code coverage and reliability through rigorous testing.
+September 2021 – 2022	Consultant / SimplyEarth
+•	Provided ongoing maintenance and support for the e-commerce platform, ensuring optimal performance, security, and uptime.
+•	Identified and implemented new features essential for expanding market reach and increasing sales, aligning with business growth strategies.
+•	Regularly updated the e-commerce system, incorporating the latest technologies and user feedback to improve navigation, accessibility, and overall customer satisfaction.
+•	Connected the application to analytical tools to track conversions, monitor user activity, and gather insights, enabling data-driven decisions to optimize marketing and sales efforts.
+February 2020
+– October 2022
+	Front End Developer / TreatAnyone Inc
+•	Designed and built tailored software applications for clinical specialists, focusing on improving efficiency, accuracy, and user experience in healthcare settings.
+•	Created intuitive and user-friendly front-end workflows that align with clinic-specific business rules, ensuring seamless operations and adherence to industry standards.
+•	Connected and integrated APIs with the user interface using GraphQL, enabling efficient data retrieval and interaction between the client-side and back-end services.
+•	Developed comprehensive test case scenarios and ensured high code coverage, improving the detection of errors and enhancing the reliability and stability of the application.
+
+February 2017 
+– February 2020	Full stack developer / Aunicaj Int. Trading Corp
+•	Designed and implemented custom software applications tailored to meet the specific needs of the company, enhancing operational efficiency and workflow automation.
+•	Developed and deployed robust online services using RESTful APIs, enabling seamless communication between applications and ensuring scalability and performance.
+•	Engineered and maintained third-party API integrations, providing essential services such as bill payments, e-loading, payment gateways, insurance processing, and air ticketing, ensuring reliable and secure transactions.
+•	Actively participated in brainstorming sessions and contributed innovative ideas for the development of complex, multi-level user business applications, improving user experience and system functionality.
+•	Actively engaged with clients to gather feedback, and implemented new features and improvements based on their experiences, ensuring the product continually met user needs and expectations.
+
+January 2016 
+– December 2016	Part-time IT Instructor / ISI, CLSU
+•	Introduced foundational programming concepts, including syntax, logic structures, and algorithm development, to help students grasp the core principles of software development.
+•	Guided beginners through the basics of C/C++ programming, focusing on fundamental programming constructs, memory management, and problem-solving techniques.
+•	Provided in-depth instruction on OOP principles using Java, covering classes, objects, inheritance, polymorphism, and encapsulation to enable students to build modular and reusable code.
+•	Explained the role of Management Information Systems in organizations, covering key concepts such as database management, system analysis, and IT infrastructure to support decision-making processes.
+•	Led students through the development of dynamic web applications using PHP, teaching them server-side scripting, form handling, database connectivity, and web security best practices.
+
+
+
+
+May 2015 
+– October 2015	Associative Software Engineer / TORO.IO
+•	Utilized Java programming and the Groovy framework to design, develop, and optimize production-grade API libraries, ensuring high performance and scalability.
+•	Created online implementations and interactive demonstrations of product libraries to showcase functionality and ease of use to stakeholders and potential clients.
+•	Developed application connectors and plugin libraries to seamlessly integrate with other web services, enhancing interoperability and expanding the product ecosystem.
+•	Regularly maintained and updated production libraries, ensuring continuous improvement, bug fixes, and alignment with evolving industry standards.

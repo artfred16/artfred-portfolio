@@ -52,8 +52,12 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 bg-ocean-dark/95 backdrop-blur-md border-b border-ocean-outline z-50">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <i className="fas fa-code text-laravel-red text-xl"></i>
+          <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-1">
+              <span className="text-cyan-400 text-xl">&lt;</span>
+              <i className="fas fa-code text-laravel-red text-xl"></i>
+              <span className="text-cyan-400 text-xl">/&gt;</span>
+            </div>
             <span className="font-mono font-bold text-xl">artfred.dev</span>
           </div>
           
