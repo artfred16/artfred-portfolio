@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import Home from "@/pages/home";
 import ExperiencePage from "@/pages/experience";
 import Projects from "@/pages/projects";
+import ProjectPreview from "@/pages/project-preview";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/experience" component={ExperiencePage} />
       <Route path="/projects" component={Projects} />
+      <Route path="/project/:id" component={ProjectPreview} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

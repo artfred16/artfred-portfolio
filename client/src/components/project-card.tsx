@@ -55,27 +55,35 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </span>
           ))}
         </div>
-        <div className="flex space-x-4">
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-code-blue transition-colors"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          )}
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-400 hover:text-code-blue transition-colors"
-            >
-              <i className="fas fa-globe"></i>
-            </a>
-          )}
+        <div className="flex items-center justify-between">
+          <div className="flex space-x-4">
+            {project.githubUrl && (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-code-blue transition-colors"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-code-blue transition-colors"
+              >
+                <i className="fas fa-globe"></i>
+              </a>
+            )}
+          </div>
+          <a
+            href={`/project/${project.id}`}
+            className="text-ocean-primary hover:text-ocean-primary/80 transition-colors text-sm font-medium"
+          >
+            View Details →
+          </a>
         </div>
       </div>
     </div>
