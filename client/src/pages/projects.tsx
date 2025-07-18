@@ -5,57 +5,51 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce platform with payment integration, inventory management, and admin dashboard built with Laravel and Vue.js.",
+      title: "SimplyEarth E-Commerce Platform",
+      description: "Full-featured e-commerce platform with subscription management, inventory tracking, and comprehensive analytics dashboard. Built with Laravel backend and Vue.js frontend for optimal performance.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "MySQL", "Stripe"],
-      githubUrl: "https://github.com/artfred16",
-      liveUrl: "#"
+      technologies: ["Laravel", "Vue.js", "PostgreSQL", "Stripe", "Analytics", "Livewire"],
+      liveUrl: "https://simplyearth.com"
     },
     {
       id: 2,
-      title: "Task Management System",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "Livewire", "MySQL"],
-      githubUrl: "https://github.com/artfred16",
-      liveUrl: "#"
+      title: "Solgen Power Mobile Application",
+      description: "Cross-platform mobile application for solar power management with real-time monitoring, energy analytics, and customer portal. Optimized for performance using Ionic framework.",
+      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Laravel", "Vue.js", "Ionic", "MySQL", "PHP"],
+      githubUrl: "https://github.com/artfred16"
     },
     {
       id: 3,
-      title: "RESTful API Service",
-      description: "Comprehensive REST API with authentication, rate limiting, and comprehensive documentation. Built for scalability and performance.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Sanctum", "OpenAPI", "PostgreSQL"],
-      githubUrl: "https://github.com/artfred16",
-      liveUrl: "#"
+      title: "Healthcare Management System",
+      description: "Comprehensive healthcare application for clinical specialists with patient management, appointment scheduling, and GraphQL API integration for seamless data flow.",
+      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Angular", "GraphQL", "JavaScript", "Healthcare", "API Integration"],
+      githubUrl: "https://github.com/artfred16"
     },
     {
       id: 4,
-      title: "Content Management System",
-      description: "Custom CMS with role-based permissions, media management, and SEO optimization tools using Laravel Filament.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Filament", "MySQL", "TailwindCSS"],
-      githubUrl: "https://github.com/artfred16",
-      liveUrl: "#"
+      title: "Payment Gateway Integration System",
+      description: "Robust payment processing system with multi-gateway support, bill payments, e-loading services, and comprehensive transaction management for trading operations.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Laravel", "PHP", "RESTful APIs", "Payment Gateways", "MySQL"],
+      githubUrl: "https://github.com/artfred16"
     },
     {
       id: 5,
-      title: "Real-time Chat Application",
-      description: "Real-time messaging application with file sharing, emoji support, and group chat functionality using Laravel and Vue.js.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "Pusher", "MySQL"],
-      githubUrl: "https://github.com/artfred16",
-      liveUrl: "#"
+      title: "API Library Development Platform",
+      description: "Production-grade API libraries built with Java and Groovy framework, featuring comprehensive documentation, testing suites, and seamless integration capabilities.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Java", "Groovy", "API Development", "Libraries", "Documentation"],
+      githubUrl: "https://github.com/artfred16"
     },
     {
       id: 6,
-      title: "Analytics Dashboard",
-      description: "Advanced analytics dashboard with real-time data visualization, custom reports, and automated insights for business intelligence.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      technologies: ["Laravel", "Vue.js", "Chart.js", "MySQL"],
-      githubUrl: "https://github.com/artfred16",
-      liveUrl: "#"
+      title: "Laravel Filament Admin Dashboard",
+      description: "Modern admin dashboard built with Laravel Filament featuring role-based permissions, advanced filtering, bulk operations, and comprehensive reporting system.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by11YWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      technologies: ["Laravel", "Filament", "MySQL", "TailwindCSS", "PHP"],
+      githubUrl: "https://github.com/artfred16"
     }
   ];
 
@@ -68,7 +62,7 @@ export default function Projects() {
             <span className="text-slate-100">Featured Projects</span>
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            A showcase of my recent work and contributions to the web development community
+            A showcase of my professional work and contributions across various industries
           </p>
         </div>
         
