@@ -54,9 +54,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <div className="flex items-center space-x-1">
-              <span className="text-cyan-400 text-xl">&lt;</span>
               <i className="fas fa-code text-laravel-red text-xl"></i>
-              <span className="text-cyan-400 text-xl">/&gt;</span>
             </div>
             <span className="font-mono font-bold text-xl">artfred.dev</span>
           </div>

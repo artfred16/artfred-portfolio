@@ -19,18 +19,14 @@ export default function Skills() {
     { name: "Github", icon: "fab fa-github", color: "text-slate-300" },
     { name: "Bitbucket", icon: "fab fa-bitbucket", color: "text-blue-600" },
     { name: "Figma", icon: "fab fa-figma", color: "text-pink-500" },
-    { name: "Canva", icon: "fas fa-palette", color: "text-cyan-400" },
     { name: "Jira", icon: "fab fa-jira", color: "text-blue-500" },
     { name: "Zapier", icon: "fas fa-bolt", color: "text-orange-500" },
     { name: "Filament", icon: "fas fa-layer-group", color: "text-amber-500" },
     { name: "Omnisend", icon: "fas fa-envelope", color: "text-slate-400" },
-    { name: "Klaviyo", icon: "fas fa-chart-line", color: "text-slate-200" },
     { name: "Nova", icon: "fas fa-gem", color: "text-emerald-400" },
-    { name: "Stripe", icon: "fab fa-stripe", color: "text-purple-500" },
     { name: "PayPal", icon: "fab fa-paypal", color: "text-blue-600" },
     { name: "Notion", icon: "fas fa-sticky-note", color: "text-slate-300" },
     { name: "Docker", icon: "fab fa-docker", color: "text-blue-500" },
-    { name: "ChatGPT", icon: "fas fa-robot", color: "text-green-400" }
   ];
 
 

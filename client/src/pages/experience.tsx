@@ -9,9 +9,9 @@ export default function ExperiencePage() {
       company: "SimplyEarth",
       period: "May 2023 - Present",
       description: "Providing ongoing maintenance and support for e-commerce and inventory management systems. Leveraging analytical tools to monitor sales performance and implement optimization strategies.",
-      technologies: ["Laravel", "Vue.js", "MySQL", "Analytics"],
+      technologies: ["Laravel", "Vue.js", "Tailwind", "Posgresql", "Analytics", "Livewire", "Filament", "Inertiajs"],
       icon: "fas fa-briefcase",
-      color: "bg-laravel-red"
+      color: "bg-ocean-error"
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export default function ExperiencePage() {
       company: "TreatAnyone Inc",
       period: "February 2020 - October 2022",
       description: "Designed tailored software applications for clinical specialists. Created intuitive front-end workflows and integrated APIs using GraphQL for healthcare settings.",
-      technologies: ["Vue.js", "GraphQL", "JavaScript", "Healthcare"],
+      technologies: ["Angular", "GraphQL", "JavaScript", "Healthcare"],
       icon: "fas fa-heartbeat",
       color: "bg-ocean-secondary"
     },
@@ -49,7 +49,7 @@ export default function ExperiencePage() {
       company: "Aunicaj Int. Trading Corp",
       period: "February 2017 - February 2020",
       description: "Designed custom software applications and deployed robust online services using RESTful APIs. Engineered third-party integrations for payments, e-loading, and ticketing systems.",
-      technologies: ["PHP", "RESTful APIs", "Payment Gateways", "MySQL"],
+      technologies: ["Laravel", "PHP", "RESTful APIs", "Payment Gateways", "MySQL"],
       icon: "fas fa-globe",
       color: "bg-ocean-tertiary"
     },
