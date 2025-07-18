@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "wouter";
+import { useLocation } from "wouter";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -7,6 +7,9 @@ export default function Navigation() {
   const [location] = useLocation();
 
   useEffect(() => {
+    // Only run scroll detection on home page
+    if (location !== "/") return;
+    
     const handleScroll = () => {
       const sections = ["home", "experience", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
@@ -27,9 +30,15 @@ export default function Navigation() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location]);
 
   const scrollToSection = (sectionId: string) => {
+    // If not on home page, navigate to home first
+    if (location !== "/") {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       const offsetTop = element.offsetTop - 80;
@@ -56,7 +65,12 @@ export default function Navigation() {
             <div className="flex items-center space-x-1">
               <i className="fas fa-code text-laravel-red text-xl"></i>
             </div>
-            <span className="font-mono font-bold text-xl">artfred.dev</span>
+            <button
+              onClick={() => window.location.href = "/"}
+              className="font-mono font-bold text-xl hover:text-ocean-primary transition-colors"
+            >
+              artfred.dev
+            </button>
           </div>
           
           {/* Desktop Navigation */}

@@ -31,12 +31,7 @@ function App() {
       <TooltipProvider>
         <div className="min-h-screen bg-ocean-dark text-slate-100">
           <Navigation />
-          <main>
-            <Home />
-            <ExperiencePage />
-            <Projects />
-            <Contact />
-          </main>
+          <Router />
           <Footer />
           <Toaster />
         </div>
