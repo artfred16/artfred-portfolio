@@ -2,17 +2,26 @@ export default function Skills() {
   const languages = [
     { name: "Laravel", icon: "fab fa-laravel", color: "text-red-500" },
     { name: "Vue.js", icon: "fab fa-vuejs", color: "text-green-500" },
+    { name: "React", icon: "fab fa-react", color: "text-blue-400" },
+    { name: "Angular", icon: "fab fa-angular", color: "text-red-600" },
     { name: "HTML5", icon: "fab fa-html5", color: "text-orange-500" },
     { name: "CSS3", icon: "fab fa-css3-alt", color: "text-blue-500" },
     { name: "JavaScript", icon: "fab fa-js", color: "text-yellow-500" },
+    { name: "ES6", icon: "fab fa-js-square", color: "text-yellow-400" },
     { name: "MySQL", icon: "fas fa-database", color: "text-blue-400" },
+    { name: "PostgreSQL", icon: "fas fa-database", color: "text-blue-600" },
+    { name: "MSSQL", icon: "fas fa-server", color: "text-gray-400" },
+    { name: "SQLite", icon: "fas fa-database", color: "text-green-600" },
     { name: "Nuxt.js", icon: "fab fa-vuejs", color: "text-green-400" },
     { name: "TailwindCSS", icon: "fas fa-wind", color: "text-cyan-400" },
+    { name: "Sass", icon: "fab fa-sass", color: "text-pink-500" },
     { name: "jQuery", icon: "fab fa-js", color: "text-blue-400" },
     { name: "Bootstrap", icon: "fab fa-bootstrap", color: "text-purple-500" },
     { name: "PHP", icon: "fab fa-php", color: "text-indigo-400" },
     { name: "Livewire", icon: "fas fa-bolt", color: "text-pink-400" },
-    { name: "Inertia.js", icon: "fas fa-rocket", color: "text-purple-400" }
+    { name: "Inertia.js", icon: "fas fa-rocket", color: "text-purple-400" },
+    { name: "Ionic", icon: "fas fa-mobile-alt", color: "text-blue-500" },
+    { name: "Filament", icon: "fas fa-layer-group", color: "text-amber-500" }
   ];
 
   const tools = [
@@ -21,12 +30,12 @@ export default function Skills() {
     { name: "Figma", icon: "fab fa-figma", color: "text-pink-500" },
     { name: "Jira", icon: "fab fa-jira", color: "text-blue-500" },
     { name: "Zapier", icon: "fas fa-bolt", color: "text-orange-500" },
-    { name: "Filament", icon: "fas fa-layer-group", color: "text-amber-500" },
-    { name: "Omnisend", icon: "fas fa-envelope", color: "text-slate-400" },
-    { name: "Nova", icon: "fas fa-gem", color: "text-emerald-400" },
-    { name: "PayPal", icon: "fab fa-paypal", color: "text-blue-600" },
-    { name: "Notion", icon: "fas fa-sticky-note", color: "text-slate-300" },
-    { name: "Docker", icon: "fab fa-docker", color: "text-blue-500" },
+    { name: "Laravel Forge", icon: "fas fa-server", color: "text-red-500" },
+    { name: "Envoyer", icon: "fas fa-rocket", color: "text-green-500" },
+    { name: "Bugsnag", icon: "fas fa-bug", color: "text-red-400" },
+    { name: "Laravel Nova", icon: "fas fa-gem", color: "text-emerald-400" },
+    { name: "Redis", icon: "fas fa-memory", color: "text-red-600" },
+    { name: "Docker", icon: "fab fa-docker", color: "text-blue-500" }
   ];
 
 
