@@ -1,236 +1,21 @@
 import { useLocation } from "wouter";
-import { Project } from "@/lib/types";
 import { useState } from "react";
+import { projects } from "@/data/projects";
 
 interface ProjectPreviewProps {
   projectId: string;
 }
 
 export default function ProjectPreview() {
-  const [location] = useLocation();
+  const [location, navigate] = useLocation();
   const projectId = location.split('/').pop();
-  
-  // Extended project data with more details
-  const projects: (Project & { 
-    longDescription: string; 
-    features: string[]; 
-    challenges: string[];
-    gallery: string[];
-    role: string;
-    duration: string;
-  })[] = [
-    {
-      id: 1,
-      title: "SimplyEarth E-Commerce Platform",
-      description: "Full-featured e-commerce platform with subscription management, inventory tracking, and comprehensive analytics dashboard.",
-      longDescription: "SimplyEarth is a comprehensive e-commerce platform specializing in essential oils and wellness products. The platform features a sophisticated subscription management system that handles recurring orders, inventory tracking with real-time updates, and a comprehensive analytics dashboard for business intelligence. The system processes thousands of orders monthly and integrates with multiple payment gateways, shipping providers, and marketing automation tools. Built with Laravel for robust backend functionality and Vue.js for dynamic frontend interactions, the platform delivers exceptional performance and user experience.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
-      gallery: [
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-      ],
-      technologies: ["Laravel", "Vue.js", "PostgreSQL", "Stripe", "Analytics", "Livewire"],
-      features: [
-        "Subscription Management System",
-        "Real-time Inventory Tracking",
-        "Advanced Analytics Dashboard",
-        "Multi-payment Gateway Integration",
-        "Automated Marketing Tools",
-        "Customer Portal",
-        "Order Management System",
-        "Shipping Integration"
-      ],
-      challenges: [
-        "Handling high-volume subscription processing",
-        "Real-time inventory synchronization",
-        "Complex pricing rules and discounts",
-        "Integration with multiple third-party services"
-      ],
-      role: "Full Stack Developer",
-      duration: "May 2023 - Present",
-      liveUrl: "https://simplyearth.com"
-    },
-    {
-      id: 2,
-      title: "Solgen Power Mobile Application",
-      description: "Cross-platform mobile application for solar power management with real-time monitoring and energy analytics.",
-      longDescription: "Solgen Power mobile application is a comprehensive solution for solar energy management, providing users with real-time monitoring of their solar installations, detailed energy analytics, and a customer portal for account management. The application features interactive dashboards showing energy production, consumption patterns, and cost savings. Built using Vue.js and Ionic framework for cross-platform compatibility, the app delivers native-like performance on both iOS and Android devices. The backend Laravel API handles complex calculations for energy metrics and integrates with various solar monitoring hardware.",
-      image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gallery: [
-        "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-      ],
-      technologies: ["Laravel", "Vue.js", "Ionic", "MySQL", "PHP"],
-      features: [
-        "Real-time Solar Monitoring",
-        "Energy Production Analytics",
-        "Cost Savings Calculator",
-        "Customer Account Portal",
-        "Push Notifications",
-        "Offline Data Sync",
-        "Interactive Charts",
-        "Hardware Integration"
-      ],
-      challenges: [
-        "Cross-platform mobile optimization",
-        "Real-time data synchronization",
-        "Complex energy calculations",
-        "Hardware integration compatibility"
-      ],
-      role: "Full Stack Developer Contractor",
-      duration: "October 2022 - April 2023",
-      githubUrl: "https://github.com/artfred16"
-    },
-    {
-      id: 3,
-      title: "Healthcare Management System",
-      description: "Comprehensive healthcare application for clinical specialists with patient management and GraphQL API integration.",
-      longDescription: "A sophisticated healthcare management system designed specifically for clinical specialists to streamline patient care and administrative tasks. The system features comprehensive patient management, appointment scheduling, medical records management, and billing integration. Built with Angular for a responsive frontend and GraphQL for efficient API communication, the application ensures HIPAA compliance and data security. The system integrates with various medical devices and laboratory systems, providing clinicians with a unified view of patient data and enabling better decision-making through advanced analytics and reporting.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gallery: [
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-      ],
-      technologies: ["Angular", "GraphQL", "JavaScript", "Healthcare", "API Integration"],
-      features: [
-        "Patient Management System",
-        "Appointment Scheduling",
-        "Medical Records Management",
-        "HIPAA Compliant Security",
-        "Laboratory Integration",
-        "Billing System Integration",
-        "Advanced Reporting",
-        "Mobile Responsive Design"
-      ],
-      challenges: [
-        "HIPAA compliance implementation",
-        "Complex medical workflow management",
-        "Integration with legacy systems",
-        "Real-time data synchronization"
-      ],
-      role: "Front End Developer",
-      duration: "February 2020 - October 2022",
-      githubUrl: "https://github.com/artfred16"
-    },
-    {
-      id: 4,
-      title: "Payment Gateway Integration System",
-      description: "Robust payment processing system with multi-gateway support and comprehensive transaction management.",
-      longDescription: "A comprehensive payment processing system designed for trading operations, featuring multi-gateway support, bill payments, e-loading services, and advanced transaction management. The system handles various payment methods including credit cards, bank transfers, digital wallets, and cryptocurrency payments. Built with Laravel and PHP, the platform ensures PCI DSS compliance and implements advanced fraud detection mechanisms. The system processes thousands of transactions daily and provides real-time reporting, reconciliation tools, and automated settlement processes for business operations.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gallery: [
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1607863680198-23d4b2565df0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-      ],
-      technologies: ["Laravel", "PHP", "RESTful APIs", "Payment Gateways", "MySQL"],
-      features: [
-        "Multi-Gateway Payment Processing",
-        "Bill Payment Services",
-        "E-loading Integration",
-        "Fraud Detection System",
-        "Real-time Transaction Monitoring",
-        "Automated Reconciliation",
-        "PCI DSS Compliance",
-        "Advanced Reporting Dashboard"
-      ],
-      challenges: [
-        "PCI DSS compliance implementation",
-        "Multi-gateway integration complexity",
-        "Real-time fraud detection",
-        "High-volume transaction processing"
-      ],
-      role: "Full Stack Developer",
-      duration: "February 2017 - February 2020",
-      githubUrl: "https://github.com/artfred16"
-    },
-    {
-      id: 5,
-      title: "API Library Development Platform",
-      description: "Production-grade API libraries built with Java and Groovy framework with comprehensive documentation.",
-      longDescription: "A sophisticated API library development platform built with Java and Groovy framework, designed to create production-grade API libraries with comprehensive documentation, testing suites, and seamless integration capabilities. The platform features automated code generation, extensive testing frameworks, and interactive documentation systems. The libraries support various integration patterns including REST, GraphQL, and WebSocket connections. The platform includes continuous integration pipelines, automated testing, and deployment processes that ensure high-quality, reliable API libraries for enterprise use.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gallery: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-      ],
-      technologies: ["Java", "Groovy", "API Development", "Libraries", "Documentation"],
-      features: [
-        "Automated Code Generation",
-        "Comprehensive Testing Suites",
-        "Interactive Documentation",
-        "Multiple Integration Patterns",
-        "Continuous Integration Pipeline",
-        "Version Management System",
-        "Performance Monitoring",
-        "Enterprise-grade Security"
-      ],
-      challenges: [
-        "Complex library architecture design",
-        "Automated testing implementation",
-        "Documentation generation automation",
-        "Version compatibility management"
-      ],
-      role: "Associate Software Engineer",
-      duration: "May 2015 - October 2015",
-      githubUrl: "https://github.com/artfred16"
-    },
-    {
-      id: 6,
-      title: "Laravel Filament Admin Dashboard",
-      description: "Modern admin dashboard built with Laravel Filament featuring role-based permissions and advanced reporting.",
-      longDescription: "A comprehensive admin dashboard built with Laravel Filament, featuring advanced role-based permissions, sophisticated filtering capabilities, bulk operations, and comprehensive reporting systems. The dashboard provides administrators with powerful tools for managing users, content, and system configurations. Built with modern Laravel practices and Filament's component-based architecture, the system offers exceptional performance and user experience. The dashboard includes advanced features like real-time notifications, audit logging, data export capabilities, and customizable widgets for different user roles.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      gallery: [
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-      ],
-      technologies: ["Laravel", "Filament", "MySQL", "TailwindCSS", "PHP"],
-      features: [
-        "Role-based Permission System",
-        "Advanced Data Filtering",
-        "Bulk Operations Support",
-        "Comprehensive Reporting",
-        "Real-time Notifications",
-        "Audit Logging System",
-        "Data Export Capabilities",
-        "Customizable Widgets"
-      ],
-      challenges: [
-        "Complex permission system design",
-        "Performance optimization for large datasets",
-        "Custom component development",
-        "Advanced filtering implementation"
-      ],
-      role: "Full Stack Developer",
-      duration: "Recent Project",
-      githubUrl: "https://github.com/artfred16"
-    }
-  ];
 
-  const project = projects.find(p => p.id === parseInt(projectId || '1'));
+  const project = projects.find(p => p.slug === projectId || p.id === parseInt(projectId || '1'));
   const [selectedImage, setSelectedImage] = useState(0);
 
   if (!project) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Project Not Found</h1>
-          <a href="/projects" className="btn-primary">Back to Projects</a>
-        </div>
-      </div>
-    );
+    navigate("/404");
+    return;
   }
 
   return (
@@ -246,20 +31,20 @@ export default function ProjectPreview() {
             <span className="text-slate-300">{project.title}</span>
           </nav>
           
-          <div className="flex items-center justify-between mb-6">
-            <div>
+          <div className="flex md:flex-row flex-col items-center justify-between mb-6">
+            <div className="flex-1">
               <h1 className="text-3xl md:text-4xl font-bold mb-2">{project.title}</h1>
               <p className="text-slate-400 text-lg">{project.description}</p>
             </div>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 md:mt-0 mt-4">
               {project.liveUrl && (
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="btn-primary flex text-center"
                 >
-                  <i className="fas fa-external-link-alt mr-2"></i>
+                  <i className="fas fa-external-link-alt mr-2 my-auto"></i>
                   Live Demo
                 </a>
               )}
@@ -290,7 +75,7 @@ export default function ProjectPreview() {
                 <img
                   src={project.gallery[selectedImage]}
                   alt={`${project.title} - Image ${selectedImage + 1}`}
-                  className="w-full h-96 object-cover rounded-lg"
+                  className="w-full md:h-96 h-52 object-cover rounded-lg"
                 />
               </div>
               
@@ -309,7 +94,7 @@ export default function ProjectPreview() {
                     <img
                       src={image}
                       alt={`${project.title} - Thumbnail ${index + 1}`}
-                      className="w-full h-20 object-cover"
+                      className="w-full md:h-20 h-16 object-cover"
                     />
                   </button>
                 ))}
@@ -359,10 +144,10 @@ export default function ProjectPreview() {
                   <span className="text-slate-400 text-sm">Role</span>
                   <p className="text-slate-100 font-medium">{project.role}</p>
                 </div>
-                <div>
+                {project.duration && (<div>
                   <span className="text-slate-400 text-sm">Duration</span>
                   <p className="text-slate-100 font-medium">{project.duration}</p>
-                </div>
+                </div>)}
               </div>
             </div>
 

@@ -15,7 +15,7 @@ export default function ExperiencePage() {
     },
     {
       id: 2,
-      title: "Full Stack Developer Contractor",
+      title: "Full Stack Developer (Contract)",
       company: "Solgen Power",
       period: "October 2022 - April 2023",
       description: "Created and optimized mobile applications using Vue.js and Ionic framework. Designed optimized queries in Laravel and maintained comprehensive test cases.",
@@ -25,7 +25,7 @@ export default function ExperiencePage() {
     },
     {
       id: 3,
-      title: "Consultant",
+      title: "Web Developer / Consultant",
       company: "SimplyEarth",
       period: "September 2021 - 2022",
       description: "Provided maintenance and support for e-commerce platform. Implemented new features for market expansion and integrated analytical tools for data-driven decisions.",

@@ -79,7 +79,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             )}
           </div>
           <button
-            onClick={() => window.location.href = `/project/${project.id}`}
+            onClick={() => window.location.href = `#/projects/${project.slug}`}
             className="text-ocean-primary hover:text-ocean-primary/80 transition-colors text-sm font-medium"
           >
             View Details →

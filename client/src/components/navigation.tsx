@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const [location] = useLocation();
+  const [location, navigate] = useHashLocation();
 
   useEffect(() => {
     // Only run scroll detection on home page
@@ -34,6 +34,11 @@ export default function Navigation() {
 
   const scrollToSection = (sectionId: string) => {
     // If not on home page, navigate to home first
+    if (sectionId == "home" && location !== "/") {
+      navigate('/');
+      return;
+    }
+
     if (location !== "/") {
       window.location.href = `/#${sectionId}`;
       return;
