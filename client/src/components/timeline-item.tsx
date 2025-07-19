@@ -7,15 +7,15 @@ interface TimelineItemProps {
 export default function TimelineItem({ experience }: TimelineItemProps) {
   return (
     <div className="relative flex items-start">
-      <div className={`flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center border-4 border-ocean-dark ${experience.color}`}>
+      <div className={`flex-shrink-0 w-16 h-16 rounded-full md:flex md:items-center justify-center border-4 border-ocean-dark ${experience.color} hidden`}>
         <i className={`${experience.icon} text-white`}></i>
       </div>
-      <div className="ml-8 bg-ocean-surface rounded-lg p-6 border border-ocean-outline flex-1">
-        <div className="flex items-center justify-between mb-2">
+      <div className="md:ml-8 bg-ocean-surface rounded-lg p-6 border border-ocean-outline flex-1">
+        <div className="flex md:flex-row flex-col items-center md:justify-between mb-2">
           <h3 className="text-xl font-semibold">{experience.title}</h3>
           <span className="text-sm text-slate-400 font-mono">{experience.period}</span>
         </div>
-        <p className="text-ocean-primary font-medium mb-3">{experience.company}</p>
+        <p className="text-ocean-primary font-medium mb-3 md:text-right text-center">{experience.company}</p>
         <p className="text-slate-300 mb-4">{experience.description}</p>
         <div className="flex flex-wrap gap-2">
           {experience.technologies.map((tech) => (

@@ -94,7 +94,7 @@ export default function ExperiencePage() {
 
           <div className="relative">
             {/* Timeline Line */}
-            <div className="absolute left-8 top-0 bottom-0 w-0.5 timeline-line"></div>
+            <div className="absolute md:block hidden left-8 top-0 bottom-0 w-0.5 timeline-line"></div>
 
             {/* Timeline Items */}
             <div className="space-y-12">
