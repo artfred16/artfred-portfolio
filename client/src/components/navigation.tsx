@@ -7,11 +7,15 @@ export default function Navigation() {
   const [location, navigate] = useHashLocation();
 
   useEffect(() => {
+    const sections = ["home", "experience", "projects", "contact"];
     // Only run scroll detection on home page
-    if (location !== "/") return;
+    if (location !== "/") {
+      const section = location.split("/")[1];
+      sections.includes(section) && setActiveSection(section);
+      return;
+    }
     
     const handleScroll = () => {
-      const sections = ["home", "experience", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {

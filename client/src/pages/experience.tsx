@@ -1,5 +1,7 @@
 import TimelineItem from "@/components/timeline-item";
 import { Experience } from "@/lib/types";
+import {ScrollToTop} from "@/components/helpers/scroller.tsx";
+import {Fragment} from "react";
 
 export default function ExperiencePage() {
   const experiences: Experience[] = [
@@ -76,30 +78,33 @@ export default function ExperiencePage() {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-ocean-surface/30">
-      <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-slate-400 font-mono">// </span>
-            <span className="text-slate-100">Experience Timeline</span>
-          </h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
-            My journey as a Laravel developer and the milestones I've achieved
-          </p>
-        </div>
-        
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 timeline-line"></div>
-          
-          {/* Timeline Items */}
-          <div className="space-y-12">
-            {experiences.map((experience) => (
-              <TimelineItem key={experience.id} experience={experience} />
-            ))}
+    <Fragment>
+      <ScrollToTop/>
+      <section id="experience" className="py-20 px-6 bg-ocean-surface/30">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="text-slate-400 font-mono">// </span>
+              <span className="text-slate-100">Experience Timeline</span>
+            </h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              My journey as a Laravel developer and the milestones I've achieved
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 timeline-line"></div>
+
+            {/* Timeline Items */}
+            <div className="space-y-12">
+              {experiences.map((experience) => (
+                  <TimelineItem key={experience.id} experience={experience}/>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Fragment>
   );
 }
