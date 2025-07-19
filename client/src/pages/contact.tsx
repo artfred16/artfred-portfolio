@@ -105,10 +105,10 @@ export default function Contact() {
                   developer to join your team or want to explore a project idea, feel free to reach out — I'd love to
                   connect.
                 </p>
-                <div className="flex space-x-4">
+                <div className="flex md:flex-row flex-col md:space-x-4 md:space-y-0 space-y-4">
                   <a
                       href={`mailto:${contactInfo.email}`}
-                      className="btn-primary"
+                      className="btn-primary w-fit"
                   >
                     Send Email
                   </a>
@@ -116,7 +116,7 @@ export default function Contact() {
                       href={contactInfo.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-secondary"
+                      className="btn-secondary w-fit"
                   >
                     Connect on LinkedIn
                   </a>
