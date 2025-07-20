@@ -24,6 +24,7 @@ export const languages = [
   { name: "GraphQL", icon: "fas fa-hexagon-nodes", color: "text-pink-500", url: "https://graphql.org", imageIcon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/500px-GraphQL_Logo.svg.png" },
   { name: "Alpine.js", icon: "fas fa-diamond", color: "text-cyan-500", url: "https://alpinejs.dev", imageIcon: "https://archive.org/download/github.com-alpinejs-alpine_-_2021-01-02_20-48-13/cover.jpg" },
   { name: "NPM", icon: "fab fa-npm", color: "text-red-500", url: "https://www.npmjs.com/" },
+  { name: "RxJS", icon: "fab fa-npm", color: "text-red-500", url: "https://rxjs.dev/", imageIcon: "https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png" },
 ];
 
 export const tools = [
