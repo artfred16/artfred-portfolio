@@ -31,7 +31,15 @@ export default function Skills() {
                   rel="noopener noreferrer"
                   className="flex flex-col items-center hover:scale-105 transition-transform cursor-pointer group"
                 >
-                  <i className={`${lang.icon} text-4xl ${lang.color} mb-3 group-hover:scale-110 transition-transform`}></i>
+                  {lang.imageIcon ? (
+                    <img 
+                      src={lang.imageIcon} 
+                      alt={lang.name}
+                      className="w-10 h-10 mb-3 group-hover:scale-110 transition-transform"
+                    />
+                  ) : (
+                    <i className={`${lang.icon} text-4xl ${lang.color} mb-3 group-hover:scale-110 transition-transform`}></i>
+                  )}
                   <span className="text-sm text-slate-300 text-center w-full group-hover:text-ocean-primary transition-colors">{lang.name}</span>
                 </a>
               ))}
@@ -53,7 +61,15 @@ export default function Skills() {
                   rel="noopener noreferrer"
                   className="flex flex-col items-center hover:scale-105 transition-transform cursor-pointer group"
                 >
-                  <i className={`${tool.icon} text-4xl ${tool.color} mb-3 group-hover:scale-110 transition-transform`}></i>
+                  {tool.imageIcon ? (
+                    <img 
+                      src={tool.imageIcon} 
+                      alt={tool.name}
+                      className="w-10 h-10 mb-3 group-hover:scale-110 transition-transform"
+                    />
+                  ) : (
+                    <i className={`${tool.icon} text-4xl ${tool.color} mb-3 group-hover:scale-110 transition-transform`}></i>
+                  )}
                   <span className="text-sm text-slate-300 text-center w-full group-hover:text-ocean-primary transition-colors">{tool.name}</span>
                 </a>
               ))}

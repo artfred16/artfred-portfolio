@@ -1,7 +1,7 @@
 export const languages = [
   { name: "Laravel", icon: "fab fa-laravel", color: "text-red-500", url: "https://laravel.com" },
   { name: "Vue.js", icon: "fab fa-vuejs", color: "text-green-500", url: "https://vuejs.org" },
-  { name: "React", icon: "fab fa-react", color: "text-blue-400", url: "https://reactjs.org" },
+  { name: "React", icon: "fab fa-react", color: "text-blue-400", url: "https://reactjs.org", imageIcon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
   { name: "Angular", icon: "fab fa-angular", color: "text-red-600", url: "https://angular.io" },
   { name: "HTML5", icon: "fab fa-html5", color: "text-orange-500", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
   { name: "CSS3", icon: "fab fa-css3-alt", color: "text-blue-500", url: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
