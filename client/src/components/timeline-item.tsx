@@ -12,7 +12,7 @@ export default function TimelineItem({ experience }: TimelineItemProps) {
       </div>
       <div className="md:ml-8 bg-ocean-surface rounded-lg p-6 border border-ocean-outline flex-1">
         <div className="flex md:flex-row flex-col items-center md:justify-between mb-2">
-          <h3 className="text-xl font-semibold">{experience.title}</h3>
+          <h3 className="text-xl font-semibold md:text-left text-center">{experience.title}</h3>
           <span className="text-sm text-slate-400 font-mono">{experience.period}</span>
         </div>
         <p className="text-ocean-primary font-medium mb-3 md:text-left text-center">{experience.company}</p>
