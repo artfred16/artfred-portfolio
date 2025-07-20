@@ -11,7 +11,7 @@ export default function ExperiencePage() {
       company: "SimplyEarth",
       period: "May 2023 - Present",
       description: "Providing ongoing maintenance and support for e-commerce and inventory management systems. Leveraging analytical tools to monitor sales performance and implement optimization strategies.",
-      technologies: ["Laravel", "Vue.js", "Tailwind", "Posgresql", "Analytics", "Livewire", "Filament", "Inertiajs"],
+      technologies: ["Laravel", "Vue.js", "Tailwind", "Posgresql", "Analytics", "Livewire", "Filament", "Inertia.js"],
       icon: "fas fa-briefcase",
       color: "bg-ocean-error"
     },
@@ -21,7 +21,7 @@ export default function ExperiencePage() {
       company: "Solgen Power",
       period: "October 2022 - April 2023",
       description: "Created and optimized mobile applications using Vue.js and Ionic framework. Designed optimized queries in Laravel and maintained comprehensive test cases.",
-      technologies: ["Laravel", "Vue.js", "Ionic", "PHP"],
+      technologies: ["Laravel", "Vue.js", "Ionic", "PHP", "TypeScript", "Laravel Nova"],
       icon: "fas fa-code",
       color: "bg-ocean-primary"
     },
@@ -31,7 +31,7 @@ export default function ExperiencePage() {
       company: "SimplyEarth",
       period: "September 2021 - 2022",
       description: "Provided maintenance and support for e-commerce platform. Implemented new features for market expansion and integrated analytical tools for data-driven decisions.",
-      technologies: ["Laravel", "Vue.js", "Analytics", "E-commerce"],
+      technologies: ["Laravel", "Vue.js", "Analytics", "E-commerce", "Wordpress", 'Divi'],
       icon: "fas fa-chart-line",
       color: "bg-ocean-success"
     },
@@ -41,7 +41,7 @@ export default function ExperiencePage() {
       company: "TreatAnyone Inc",
       period: "February 2020 - October 2022",
       description: "Designed tailored software applications for clinical specialists. Created intuitive front-end workflows and integrated APIs using GraphQL for healthcare settings.",
-      technologies: ["Angular", "GraphQL", "JavaScript", "Healthcare"],
+      technologies: ["Angular", "GraphQL", "JavaScript", "TypeScript", "RxJS"],
       icon: "fas fa-heartbeat",
       color: "bg-ocean-secondary"
     },
@@ -51,7 +51,7 @@ export default function ExperiencePage() {
       company: "Aunicaj Int. Trading Corp",
       period: "February 2017 - February 2020",
       description: "Designed custom software applications and deployed robust online services using RESTful APIs. Engineered third-party integrations for payments, e-loading, and ticketing systems.",
-      technologies: ["Laravel", "PHP", "RESTful APIs", "Payment Gateways", "MySQL"],
+      technologies: ["Laravel", "PHP", "REST/SOAP", "MySQL", "Vue.js", "NuxtJS"],
       icon: "fas fa-globe",
       color: "bg-ocean-tertiary"
     },
@@ -61,7 +61,7 @@ export default function ExperiencePage() {
       company: "ISI, CLSU",
       period: "January 2016 - December 2016",
       description: "Introduced programming concepts and guided students through C/C++, Java OOP principles, and PHP web development. Taught Management Information Systems concepts.",
-      technologies: ["C/C++", "Java", "PHP", "Teaching"],
+      technologies: ["C/C++", "Java", "PHP"],
       icon: "fas fa-chalkboard-teacher",
       color: "bg-ocean-warning"
     },
@@ -71,7 +71,7 @@ export default function ExperiencePage() {
       company: "TORO.IO",
       period: "May 2015 - October 2015",
       description: "Utilized Java programming and Groovy framework to develop production-grade API libraries. Created online implementations and maintained production libraries.",
-      technologies: ["Java", "Groovy", "API Development", "Libraries"],
+      technologies: ["Java", "Groovy", "REST/SOAP", "PosgreSQL", "Maven"],
       icon: "fas fa-graduation-cap",
       color: "bg-ocean-error"
     }

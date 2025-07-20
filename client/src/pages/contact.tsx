@@ -137,7 +137,7 @@ export default function Contact() {
               </p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <span
-                    className="px-3 py-1 bg-laravel-red/20 text-laravel-red rounded-full text-sm">Laravel Expert</span>
+                    className="px-3 py-1 bg-laravel-red/20 text-laravel-red rounded-full text-sm">Laravel Developer</span>
                 <span className="px-3 py-1 bg-ocean-success/20 text-ocean-success rounded-full text-sm">Vue.js Developer</span>
                 <span
                     className="px-3 py-1 bg-ocean-primary/20 text-ocean-primary rounded-full text-sm">Full Stack</span>

@@ -15,7 +15,7 @@ export default function TimelineItem({ experience }: TimelineItemProps) {
           <h3 className="text-xl font-semibold">{experience.title}</h3>
           <span className="text-sm text-slate-400 font-mono">{experience.period}</span>
         </div>
-        <p className="text-ocean-primary font-medium mb-3 md:text-right text-center">{experience.company}</p>
+        <p className="text-ocean-primary font-medium mb-3 md:text-left text-center">{experience.company}</p>
         <p className="text-slate-300 mb-4">{experience.description}</p>
         <div className="flex flex-wrap gap-2">
           {experience.technologies.map((tech) => (

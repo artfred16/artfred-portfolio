@@ -22,7 +22,7 @@ export default function Hero() {
                   name: <span className="text-ocean-success">"Artfred Dela Cruz"</span>,
                 </div>
                 <div>
-                  role: <span className="text-ocean-success">"Laravel Developer"</span>,
+                  role: <span className="text-ocean-success">"Full Stack Developer"</span>,
                 </div>
                 <div>
                   passion: <span className="text-ocean-success">"Building Web Solutions"</span>
