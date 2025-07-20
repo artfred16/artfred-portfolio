@@ -33,14 +33,14 @@ export default function Contact() {
                 <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-laravel-red/20 rounded-lg flex items-center justify-center">
+                    <div className="sm:w-12 h-12 bg-laravel-red/20 rounded-lg flex items-center justify-center">
                       <i className="fas fa-envelope text-laravel-red"></i>
                     </div>
-                    <div>
+                    <div className="">
                       <p className="font-medium">Email</p>
                       <a
                           href={`mailto:${contactInfo.email}`}
-                          className="text-slate-400 hover:text-ocean-primary transition-colors"
+                          className="text-slate-400 hover:text-ocean-primary transition-colors break-all"
                       >
                         {contactInfo.email}
                       </a>
@@ -48,7 +48,7 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-ocean-success/20 rounded-lg flex items-center justify-center">
+                    <div className="sm:w-12 h-12 bg-ocean-success/20 rounded-lg flex items-center justify-center">
                       <i className="fas fa-phone text-ocean-success"></i>
                     </div>
                     <div>
@@ -63,7 +63,7 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-ocean-primary/20 rounded-lg flex items-center justify-center">
+                    <div className="sm:w-12 h-12 bg-ocean-primary/20 rounded-lg flex items-center justify-center">
                       <i className="fab fa-linkedin text-ocean-primary"></i>
                     </div>
                     <div>
@@ -80,7 +80,7 @@ export default function Contact() {
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-ocean-secondary/20 rounded-lg flex items-center justify-center">
+                    <div className="sm:w-12 h-12 bg-ocean-secondary/20 rounded-lg flex items-center justify-center">
                       <i className="fab fa-github text-ocean-secondary"></i>
                     </div>
                     <div>
