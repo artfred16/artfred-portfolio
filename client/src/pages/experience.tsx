@@ -31,7 +31,7 @@ export default function ExperiencePage() {
       company: "SimplyEarth",
       period: "September 2021 - 2022",
       description: "Provided maintenance and support for e-commerce platform. Implemented new features for market expansion and integrated analytical tools for data-driven decisions.",
-      technologies: ["Laravel", "Vue.js", "Analytics", "E-commerce", "Wordpress", 'Divi'],
+      technologies: ["Laravel", "Vue.js", "Analytics", "Wordpress", 'Divi'],
       icon: "fas fa-chart-line",
       color: "bg-ocean-success"
     },
