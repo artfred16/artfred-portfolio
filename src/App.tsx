@@ -22,14 +22,6 @@ function Router() {
         <Route path="/contact" component={Contact} />
         <Route path="/projects/:slug" component={ProjectPreview} />
       </Wouter>
-    // <Switch>
-    //   <Route path="/" component={Home} />
-    //   <Route path="/experience" component={ExperiencePage} />
-    //   <Route path="/projects" component={Projects} />
-    //   <Route path="/contact" component={Contact} />
-    //   <Route path="/projects/:slug" component={ProjectPreview} />
-    //   <Route component={NotFound} />
-    // </Switch>
   );
 }
 
