@@ -31,7 +31,7 @@ Contact: Grid gallery for projects, navigation menu included
 ## Key Components
 
 ### Frontend Structure
-- **App.tsx**: Main application component with routing and providers
+- **src/App.tsx**: Main application component with routing and providers
 - **Pages**: Home, Experience, Projects, Contact, and 404 pages
 - **Components**: Reusable UI components including navigation, hero, contact form, project cards, and timeline items
 - **UI Components**: Complete shadcn/ui component library for consistent design
