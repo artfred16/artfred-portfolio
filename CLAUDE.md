@@ -51,8 +51,8 @@ Publishing involves **two repos** (the user works directly on `main` in both, so
 - **Source** — this repo (`artfred16/ArtfredPortfolio`).
 - **Live site** — the sibling GitHub Pages repo `../artfred16.github/` (`artfred16/artfred16.github.io`), served at https://artfred16.github.io/.
 
-`npm run build` emits to `dist/` (`assets/`, `images/`, `index.html`; `emptyOutDir: true` wipes it each build). `npm run deploy:local` runs `rsync -a dist/* ../artfred16.github/` to copy the build into the Pages repo — which only goes live once that repo is committed and pushed.
+**Deploys are automated.** Pushing to `main` of this repo triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), which runs `npm ci` + `npm run build` and publishes the built `dist/` into the Pages repo (replacing its content each time, so stale bundles are auto-cleaned). That push triggers the Pages repo's `static.yml`, which deploys to the live site. Normal flow: **just commit + push to `main`** — the site updates in ~1–2 min. CI auth is an SSH deploy key on `artfred16.github.io` whose private key is the `PAGES_DEPLOY_KEY` secret here.
 
-The rsync is **additive on purpose** (no `--delete`, so the Pages repo's `.git/`/`.github/` survive) — which means old content-hashed `index-<hash>.js/css` bundles accumulate there. When committing the Pages repo, stage only the bundles `index.html` references plus new images, and prune the orphans; never commit `.DS_Store`.
+`npm run deploy:local` (`rsync -a dist/* ../artfred16.github/`) is the **manual fallback** only. Don't hand-edit `../artfred16.github/` — CI owns it; `git pull` it first if you must.
 
-**For the full build → deploy → publish flow (both repos, plus the pitfalls), use the [`/deploy` skill](.claude/skills/deploy/SKILL.md).**
+**For the CI pipeline details, verification commands, and the manual fallback, use the [`/deploy` skill](.claude/skills/deploy/SKILL.md).**
