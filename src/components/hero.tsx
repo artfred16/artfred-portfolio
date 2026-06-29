@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
             
             <p className="text-lg text-slate-300 leading-relaxed">
-              Experienced Laravel and Vue.js developer based in the Philippines, focused on building scalable web applications that solve real business problems. Passionate about modern web technologies and eager to collaborate with innovative teams.
+              Experienced Laravel and Vue.js developer based in the Philippines, focused on building scalable web applications that solve real business problems. Passionate about modern web technologies and shipping side projects fast with AI-assisted (vibe coding) workflows.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -125,6 +125,12 @@ export default function Hero() {
                 <span className="text-ocean-success">'Vue.js'</span>
                 <span className="text-slate-400">,</span>{" "}
                 <span className="text-ocean-success">'MySQL'</span>
+                <span className="text-slate-400">,</span>
+              </div>
+              <div className="ml-16">
+                <span className="text-ocean-success">'Vibe Coding'</span>
+                <span className="text-slate-400">,</span>{" "}
+                <span className="text-ocean-success">'AI-Assisted Dev'</span>
               </div>
               <div className="ml-12 text-slate-400">];</div>
               <div className="ml-8 text-slate-400">{"}"}</div>

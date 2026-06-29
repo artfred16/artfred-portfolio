@@ -6,10 +6,12 @@ export const projects: (Project & {
     challenges: string[];
     gallery: string[];
     role: string;
+    year: number;
     duration?: string;
 })[] = [
     {
         id: 1,
+        year: 2023,
         slug: "simply-earth-store",
         title: "Simply Earth Store",
         description: "Full-featured e-commerce platform with subscription management, inventory tracking, and comprehensive analytics dashboard. Built with Laravel backend and Vue.js frontend for optimal performance.",
@@ -43,6 +45,7 @@ export const projects: (Project & {
     },
     {
         id: 2,
+        year: 2024,
         slug: "nature-packaged-erp",
         title: "Nature Packaged ERP (Simply Earth)",
         description: "Nature Packaged ERP is a Laravel and Filament-based system for managing inventory, building products with BOM, and syncing stock with external platforms—built for efficient, scalable operations.",
@@ -69,10 +72,10 @@ export const projects: (Project & {
             "Scalable inventory structure for natural products"
         ],
         role: "Full Stack Developer",
-        liveUrl: "https://erp.bealionchaser.com"
     },
     {
         id: 3,
+        year: 2025,
         slug: "small-town-ev-admin",
         title: "Small Town EV Admin",
         description: "Admin dashboard for managing EV products, inventory, customer reservations, warranty processing, and supplier-managed items. Built to streamline backend operations and support efficient electric vehicle retail and logistics workflows.",
@@ -99,10 +102,10 @@ export const projects: (Project & {
             "Optimizing dashboard UX for admin users"
         ],
         role: "Full Stack Developer",
-        liveUrl: "https://smalltownev.com"
     },
     {
         id: 4,
+        year: 2021,
         title: "Natural Creator School",
         slug: "natural-creator-school",
         description: "Educational platform for essential oil creators, built with WordPress and Divi for a user-friendly learning experience.",
@@ -133,6 +136,7 @@ export const projects: (Project & {
     },
     {
         id: 5,
+        year: 2022,
         slug: "beacon-mobile-app",
         title: "Beacon Mobile App",
         description: "Mobile marketing app for Solgen with rankings, team stats, video training, and real-time updates.",
@@ -163,6 +167,7 @@ export const projects: (Project & {
     },
     {
         id: 6,
+        year: 2020,
         slug: "treat-anyone-app",
         title: "TreatAnyone App",
         description: "Web application for mental health professionals to manage consultations, scheduling, referrals, and reports.",
@@ -189,6 +194,74 @@ export const projects: (Project & {
             "Building a flexible and dynamic custom report builder"
         ],
         role: "Frontend Developer",
-        liveUrl: "https://uat.treatanyone.com"
+    },
+    {
+        id: 7,
+        year: 2026,
+        slug: "catsnip",
+        title: "Catsnip — Screenshot & Annotate",
+        description: "Privacy-first Chrome extension (Manifest V3) to capture any region — inside or outside the browser — then crop, annotate, OCR, copy, and save. Everything stays on your device.",
+        longDescription: "Catsnip is a Manifest V3 Chrome extension for capturing and marking up anything on screen. It offers four capture modes — drag a region, the visible tab, a full scrollable page (scroll-and-stitch), or any display or app window via the OS picker, even with the browser hidden. The built-in editor lets you crop and annotate with arrows, shapes, freehand pen, highlighter, text, and blur/redact, with full undo/redo and editable elements, then frame snips on gradient backgrounds. Text recognition runs fully offline against a vendored Tesseract engine — either select-to-copy straight off the image (like macOS Live Text) or extract all text to a side panel. Snips can be copied, saved as PNG/JPEG, or exported together as a ZIP. Built privacy-first: no network, no analytics, no remote code — captured pixels never leave the device. Developed solo with AI-assisted (vibe coding) workflows using Claude Code.",
+        image: "/images/cs-1.png",
+        gallery: [
+            "/images/cs-1.png",
+            "/images/cs-2.png",
+            "/images/cs-3.png",
+            "/images/cs-4.png",
+        ],
+        technologies: ["JavaScript", "Chrome Extension", "Manifest V3", "Canvas API", "Tesseract.js", "OffscreenCanvas", "Claude Code"],
+        features: [
+            "Four capture modes (region, visible, full page, screen/window)",
+            "Annotate: arrows, shapes, pen, highlighter, text, blur/redact",
+            "Editable annotations with undo/redo",
+            "Offline OCR (vendored Tesseract) with select-to-copy",
+            "Background framing with gradient presets",
+            "Copy, save PNG/JPEG, or export all as a ZIP",
+            "Private by design — nothing leaves the device"
+        ],
+        challenges: [
+            "Capturing a clean region shot without the selection UI in the result",
+            "Scroll-and-stitch full-page capture under Chrome's rate limit",
+            "Running Tesseract OCR fully offline from vendored local files",
+            "Hosting desktop capture in a stable editor tab (popups lose focus)"
+        ],
+        role: "Solo Developer (AI-assisted with Claude Code)",
+        duration: "2026",
+        githubUrl: "https://github.com/artfred16/catsnip"
+    },
+    {
+        id: 8,
+        year: 2026,
+        slug: "tabbyshot",
+        title: "Tabbyshot — Multi-Viewport Screenshots",
+        description: "Chrome extension (Manifest V3) that screenshots any page across multiple device viewports in one click, then exports them as separate images, a ZIP, or a single PDF.",
+        longDescription: "Tabbyshot is a Manifest V3 Chrome extension that renders the active tab at multiple device sizes and screenshots each in one click. It ships common viewport presets (iPhone SE, iPhone 14 Pro, Pixel 7, iPad Mini/Pro, Laptop, Full HD, QHD), supports custom viewports, and persists your list via chrome.storage. It captures full-page or visible-area as PNG or JPEG, previews every shot as a thumbnail (rename, include/exclude), and exports as images, a ZIP, or a single PDF — one page per viewport, embedding JPEG when it is smaller. Two capture engines are chosen automatically per page: a high-fidelity hidden engine via chrome.debugger (CDP device emulation), and an iframe fallback in the results tab that re-injects the session cookie so logged-in pages render logged-in even when other extensions block the debugger. It also auto-hides cookie banners and floating bars for clean shots. Developed solo with AI-assisted (vibe coding) workflows using Claude Code.",
+        image: "/images/tb-1.png",
+        gallery: [
+            "/images/tb-1.png",
+            "/images/tb-2.png",
+            "/images/tb-3.png",
+            "/images/tb-4.png",
+        ],
+        technologies: ["JavaScript", "Chrome Extension", "Manifest V3", "Chrome DevTools Protocol", "pdf-lib", "JSZip", "Claude Code"],
+        features: [
+            "One-click capture across multiple device viewports",
+            "Common presets plus custom viewports (persisted)",
+            "Full-page or visible-area, PNG or JPEG",
+            "Thumbnail preview with rename and include/exclude",
+            "Export as images, a ZIP, or a single PDF",
+            "Auto-hide cookie banners and floating bars",
+            "Logged-in capture via session-cookie re-injection"
+        ],
+        challenges: [
+            "Two capture engines with automatic per-page fallback",
+            "Keeping pages logged-in when the debugger is blocked by other extensions",
+            "Reliable per-viewport widths including real mobile emulation",
+            "Packaging multi-page PDFs with per-image JPEG/PNG selection"
+        ],
+        role: "Solo Developer (AI-assisted with Claude Code)",
+        duration: "2026",
+        liveUrl: "https://chromewebstore.google.com/detail/tabbyshot/lgggidkebfkfikeegpajhplnenilkoda",
+        githubUrl: "https://github.com/artfred16/tabbyshot-extension"
     },
 ];
