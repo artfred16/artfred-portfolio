@@ -227,6 +227,7 @@ export const projects: (Project & {
         ],
         role: "Solo Developer (AI-assisted with Claude Code)",
         duration: "2026",
+        liveUrl: "https://chromewebstore.google.com/detail/catsnip/nifgllnmdmdcichojnikejecmgllmbkg",
         githubUrl: "https://github.com/artfred16/catsnip"
     },
     {
