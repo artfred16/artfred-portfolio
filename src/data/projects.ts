@@ -265,4 +265,39 @@ export const projects: (Project & {
         liveUrl: "https://chromewebstore.google.com/detail/tabbyshot/lgggidkebfkfikeegpajhplnenilkoda",
         githubUrl: "https://github.com/artfred16/tabbyshot-extension"
     },
+    {
+        id: 9,
+        year: 2026,
+        slug: "meowdo",
+        title: "Meowdo — To-dos & Reminders",
+        description: "Privacy-first Chrome extension (Manifest V3) for fast to-do lists: organize into lists, see what's left on the toolbar badge, and get optional reminders — all on your device.",
+        longDescription: "Meowdo is a Manifest V3 Chrome extension that keeps your tasks one click away in the toolbar. Capture a task in a keystroke, group tasks into as many lists as you like (Work, Home, Shopping…) or view all at once, and see how many are left right on the toolbar badge. Complete tasks, filter by All / Active / Done, edit in place, and clear completed. Any task can carry an optional reminder — pick a preset (in 30 minutes, 1 hour, this evening, tomorrow) or an exact date/time — and when it's due Meowdo delivers three cues: a system notification (with Mark done / Snooze), a prominent on-screen alert window, and a built-in Web Audio chime that sounds the same on Windows, Linux, and macOS. Because alarms persist and wake the service worker, a reminder that falls due while Chrome is closed is delivered on next start. Built privacy-first: no account, no sync server, no analytics, no remote code — tasks live in chrome.storage.local on-device only. Developed solo with AI-assisted (vibe coding) workflows using Claude Code.",
+        image: "/images/md-1.png",
+        gallery: [
+            "/images/md-1.png",
+            "/images/md-2.png",
+            "/images/md-3.png",
+        ],
+        technologies: ["JavaScript", "Chrome Extension", "Manifest V3", "chrome.storage", "chrome.alarms", "Web Audio API", "Claude Code"],
+        features: [
+            "Quick capture with a live toolbar badge count",
+            "Multiple lists — switch or view all at once",
+            "Complete, filter (All / Active / Done), clear completed",
+            "Edit tasks in place",
+            "Optional reminders — presets or an exact date/time",
+            "System notification + on-screen alert + cross-platform chime",
+            "Reminders fire even if Chrome was closed",
+            "Private by design — nothing leaves the device"
+        ],
+        challenges: [
+            "Reliable reminders via persistent chrome.alarms waking the service worker",
+            "Playing a cross-platform chime from a worker through an offscreen document",
+            "Keeping popup and worker in sync on one chrome.storage.local model",
+            "On-screen alert window as a fallback when OS notifications are blocked"
+        ],
+        role: "Solo Developer (AI-assisted with Claude Code)",
+        duration: "2026",
+        liveUrl: "https://chromewebstore.google.com/detail/meowdo/bhoaeifoimadipicbhhlicognnfiecmh",
+        githubUrl: "https://github.com/artfred16/meowdo"
+    },
 ];
